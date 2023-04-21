@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    background: #27251f;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #66b933;
+    text-transform: uppercase;
+}
+
+#selected {
+    background: linear-gradient(to right, #66b933, #66b933);
+    color: #fff;
+    padding: 18px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #66b933;
+    transition: all 300ms;
+}
+
+#selected:hover {
+    box-shadow: 1px 1px 30px -6px #27251f;
+}
+
+/* cover */
+
+.container-cover {
+    width: 100%;
+    height: 800px;
+    background: #27251f;
+    /* if you want add cover
+
+    background-position: right;
+    background-repeat: no-repeat;
+
+    */
+}
+
+.cover {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-cover .text {
+    max-width: 400px;
+}
+
+.container-cover .text h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container-cover .text p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.container-cover .text h1, p {
+    color: #66b933;
+}
+
+.container-cover .cover .text input {
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #66b933, #66b933);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #66b933;
+    transition: all 300ms;
+}
+
+.container-cover .text input:hover {
+    box-shadow: 1px 1px 30px -6px #27251f;
+}
+
+.container-cover .svg video {
+    width: 600px;
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(15px);
+    } 50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
