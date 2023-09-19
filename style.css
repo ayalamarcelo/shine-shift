@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --primary-color: #fff;
+    --secondary-color: #020200;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--primary-color);
+    /*background: var(--secondary-color);*/
 }
 
 header {
@@ -13,15 +23,14 @@ header {
     margin-top: 40px;
     position: fixed;
     z-index: 1;
-    background: #27251f;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     height: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .logo {
@@ -49,24 +58,30 @@ header {
 }
 
 .menu ul li a {
+    padding: 12px 50px;
+    background-color: transparent;
+    border: 1.5px solid #020200;
     text-decoration: none;
-    font-size: 16px;
-    color: #66b933;
+    font-size: 12px;
+    color: #020200;
     text-transform: uppercase;
 }
-
-#selected {
-    background: linear-gradient(to right, #66b933, #66b933);
+.menu ul li a:hover {
+    background-color: #020200;
     color: #fff;
-    padding: 18px 40px;
-    border-radius: 50px;
     cursor: pointer;
-    box-shadow: 1px 1px 30px -12px #66b933;
-    transition: all 300ms;
+}
+nav ul li {
+    display: flex;
 }
 
-#selected:hover {
-    box-shadow: 1px 1px 30px -6px #27251f;
+#icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40px ;
+    height: auto;
+    cursor: pointer;
 }
 
 /* cover */
@@ -74,13 +89,8 @@ header {
 .container-cover {
     width: 100%;
     height: 800px;
-    background: #27251f;
-    /* if you want add cover
-
     background-position: right;
     background-repeat: no-repeat;
-
-    */
 }
 
 .cover {
@@ -106,38 +116,42 @@ header {
     margin-top: 40px;
 }
 
-.container-cover .text h1, p {
-    color: #66b933;
+.container-cover .text h1,
+p {
+    color: #020200;
 }
 
 .container-cover .cover .text input {
-    padding: 18px 80px;
+    padding: 16px 80px;
     border: none;
     font-size: 16px;
-    border-radius: 50px;
     margin-top: 40px;
-    background: linear-gradient(to right, #66b933, #66b933);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 1px 1px 30px -12px #66b933;
-    transition: all 300ms;
+    background: transparent;
+    color: #020200;
+    border: 1px solid #020200;
 }
 
 .container-cover .text input:hover {
-    box-shadow: 1px 1px 30px -6px #27251f;
+    background-color: #020200;
+    color: #fff;
+    cursor: pointer;
 }
 
-.container-cover .svg video {
+.container-cover .svg img {
     width: 600px;
     animation: move-vector 4s linear infinite;
 }
 
 @keyframes move-vector {
-    0%{
+    0% {
         transform: translateY(15px);
-    } 50%{
+    }
+
+    50% {
         transform: translateY(0px);
-    }100%{
+    }
+
+    100% {
         transform: translateY(15px);
     }
 }
