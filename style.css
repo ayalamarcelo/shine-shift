@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --primary-color: #fff;
+    --primary-color: #ffff;
     --secondary-color: #020200;
+
+}
+
+.dark-theme {
+    --primary-color: #252525;
+    --secondary-color: #ffff;
 }
 
 * {
@@ -14,7 +20,6 @@
 
 body {
     background: var(--primary-color);
-    /*background: var(--secondary-color);*/
 }
 
 header {
@@ -60,17 +65,19 @@ header {
 .menu ul li a {
     padding: 12px 50px;
     background-color: transparent;
-    border: 1.5px solid #020200;
+    border: 1.5px solid var(--secondary-color);
     text-decoration: none;
     font-size: 12px;
-    color: #020200;
+    color: var(--secondary-color);
     text-transform: uppercase;
 }
+
 .menu ul li a:hover {
-    background-color: #020200;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
+
 nav ul li {
     display: flex;
 }
@@ -79,9 +86,10 @@ nav ul li {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 40px ;
+    width: 40px;
     height: auto;
     cursor: pointer;
+    color: var(--secondary-color);
 }
 
 /* cover */
@@ -118,7 +126,7 @@ nav ul li {
 
 .container-cover .text h1,
 p {
-    color: #020200;
+    color: var(--secondary-color);
 }
 
 .container-cover .cover .text input {
@@ -127,13 +135,13 @@ p {
     font-size: 16px;
     margin-top: 40px;
     background: transparent;
-    color: #020200;
-    border: 1px solid #020200;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .container-cover .text input:hover {
-    background-color: #020200;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
