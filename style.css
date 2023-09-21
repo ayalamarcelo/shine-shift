@@ -18,7 +18,7 @@
     font-family: 'Mooli', sans-serif;
 }
 
-body {
+body { 
     background: var(--primary-color);
 }
 
@@ -74,6 +74,7 @@ header {
     font-size: 12px;
     color: var(--secondary-color);
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .menu ul li a:hover {
@@ -137,11 +138,13 @@ p {
 .container-cover .cover .text input {
     padding: 16px 80px;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 40px;
     background: transparent;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .container-cover .text input:hover {

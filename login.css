@@ -11,17 +11,15 @@
     --secondary-color: #ffff;
 }
 
-body {
-    background: var(--primary-color);
-    background-size: cover;
-    background-position: left;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mooli', sans-serif;
+}
+
+body {
+    background: var(--primary-color);
 }
 
 .container {
@@ -55,7 +53,7 @@ form {
     margin-bottom: 40px;
     color: var(--secondary-color);
     position: relative;
-    gap: 15px;
+    row-gap: 15px;
 }
 
 .form-content h1::after {
