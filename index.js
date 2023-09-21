@@ -5,12 +5,12 @@ var picture = document.getElementById("picture");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./images/toggle-off.svg";
-    logo.src = "./images/white-logo.png";
-    picture.src = "./images/img-white.png";
+    icon.src = "./src/toggle-off.svg";
+    logo.src = "./src/white-logo.png";
+    picture.src = "./src/img-white.png";
   } else {
-    icon.src = "./images/toggle-on.svg";
-    logo.src = "./images/dark-logo.png";
-    picture.src = "./images/img-black.png";
+    icon.src = "./src/toggle-on.svg";
+    logo.src = "./src/dark-logo.png";
+    picture.src = "./src/img-black.png";
   }
 }

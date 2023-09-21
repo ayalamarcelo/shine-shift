@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
 :root {
     --primary-color: #ffff;
@@ -7,7 +7,7 @@
 }
 
 .dark-theme {
-    --primary-color: #252525;
+    --primary-color: #202123;
     --secondary-color: #ffff;
 }
 
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mooli', sans-serif;
 }
 
 body {
@@ -28,6 +28,10 @@ header {
     margin-top: 40px;
     position: fixed;
     z-index: 1;
+}
+
+.main {
+    display: flex;
 }
 
 .container {
@@ -83,9 +87,10 @@ nav ul li {
 }
 
 #icon {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+    text-align: center;
     width: 40px;
     height: auto;
     cursor: pointer;
