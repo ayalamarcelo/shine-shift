@@ -67,7 +67,7 @@ header {
 }
 
 .menu ul li a {
-    padding: 12px 50px;
+    padding: 14px 50px;
     background-color: transparent;
     border: 1.5px solid var(--secondary-color);
     text-decoration: none;
@@ -75,12 +75,12 @@ header {
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .menu ul li a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    cursor: pointer;
+    transform: translate(4px);
+    box-shadow: 4px 4px 0px var(--secondary-color);
 }
 
 nav ul li {
@@ -145,12 +145,12 @@ p {
     border: 1px solid var(--secondary-color);
     letter-spacing: 2px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .container-cover .text input:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    cursor: pointer;
+    transform: translate(4px);
+    box-shadow: 4px 4px 0px var(--secondary-color);
 }
 
 .container-cover .svg img {

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
+/*
 :root {
     --primary-color: #ffff;
     --secondary-color: #020200;
 
-}
+}*/
 
-.dark-mode {
+:root {
     --primary-color: #202123;
     --secondary-color: #ffff;
 }
@@ -56,18 +56,6 @@ form {
     row-gap: 15px;
 }
 
-.form-content h1::after {
-    content: " ";
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--secondary-color);
-}
-
 .input-field {
     background-color: transparent;
     margin: 15px 0;
@@ -108,7 +96,7 @@ form p a {
 }
 
 form p a:hover {
-    color: var(--secondary-color);
+    color: #0f829f;
 }
 
 .button-field {
@@ -167,6 +155,21 @@ form p a:hover {
     width: 20px;
     height: auto;
     align-items: left;
+}
+
+.links ul, li {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #219ebc;
+}
+
+.links a:hover {
+    color: #0f829f;
 }
 
 @keyframes rebote {
