@@ -14,3 +14,9 @@ icon.onclick = function () {
     picture.src = "./src/img-black.png";
   }
 }
+
+document.getElementById("btn-menu").addEventListener("click", mostrar_menu);
+
+function mostrar_menu(){
+    document.querySelector(".menu").classList.toggle("mostrar_menu")
+}
