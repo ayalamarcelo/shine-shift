@@ -95,8 +95,9 @@ nav ul li {
     cursor: pointer;
 }
 
-#icon:hover {
-    transform: scale(1.10);
+#icon:active {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
 }
 
 .menu nav img {
