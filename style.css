@@ -3,11 +3,13 @@
 :root {
     --primary-color: #fefcfb;
     --secondary-color: #0d0d0d;
+    --third-color: #1F242121;
 }
 
 .dark-theme {
     --primary-color: #1f2421;
     --secondary-color: #b5b7b7;
+    --third-color: #fefcfb80;
 }
 
 * {
@@ -212,17 +214,17 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
+        width: 40px;
         height: auto;
         cursor: pointer;
         font-weight: 1500;
         transition: all 300ms;
         padding: 0.2em;
-        border-radius: 20em;
+        border-radius: 5px;
     }
 
     .menu #btn-menu:hover {
-        background: #ffffff33;
+        background: var(--third-color);
     }
 
     .menu ul {
@@ -255,7 +257,7 @@ p {
     }
 
     .svg {
-        display: flex; 
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
